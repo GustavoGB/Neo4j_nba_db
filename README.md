@@ -21,12 +21,14 @@ Já no Neo4j, o diagrama ficaria mais ou menos da seguinte forma:
 Agora com os grafos , mesmo para um número gigantesco deles o comportamento do banco de dados será mais eficaz do que o banco relacional, pois a velocidade de deslocamento dos grafos é muito maior do que realizar dezenas de joins. 
 Além de simplificar o modelo relacional, o modelo de grafos ainda é considerado ACID que garante a atomicidade, consistência, isolamento, durabilidade, dos dados em condições de transação.  Fazendo com que dados sensíveis sejam passíveis de serem armazenados no Neo4j. 
 
-## Neo4J – Guia de instalação
-
+## Neo4J – Guia de instalação Windows 
 
 #### Primeiro Passo:
 
     Instalar Neo4j Community edition
+
+    Utilizar a versão Community Server! Não será possível com outra versão.
+    
 
 OBS: Colocar de preferência em ~\ 
 
@@ -38,31 +40,37 @@ OBS: Colocar de preferência em ~\
 ```bash
 %NEO4J_HOME% = ~\neo4j-community-3.5.12\bin
 ```
-**Rodar em qualquer prompt: neo4j console**
+### Rodar em qualquer prompt: neo4j console
 
 
 ### Terceiro passo: 
 
-**Acessar o console pelo browser** 
+    -> Acessar o console pelo browser 
 
-    Rodar o console em qualquer promt: neo4j console 
+    -> Rodar o console em qualquer promt: neo4j console 
 
-    Como ele está habilitado na porta 7474 do localhost, acessar: 
+    -> Como ele está habilitado na porta 7474 do localhost, acessar: 
+        http:// http://localhost:7474/browser/ 
+    -> No dashboard o usuário e senha que deverão ser colocados, por padrão são:
 
-    http:// http://localhost:7474/browser/ 
-
-**A senha padrão definida é neo4j e o user neo4j, use-os para logar no dashboard.** 
+    username: neo4j  
+    senha: neo4j 
+     
 
 **Depois da primeira conexão, ainda no dash, aparecerá a opção de alterar a senha: coloque sua nova senha.** 
 
 ### Quarto passo: 
 
-    Testar um script em python usando neo4jbolt na porta 7687 
+    -> Testar um script em python usando neo4jbolt na porta 7687 
 
-    Rode o arquivo neo4j_example.py. Lembre-se de alterar a senha que foi criada no passo anterior. 
+    -> Rode o arquivo neo4j_example.py. Lembre-se de alterar a senha que foi criada no passo anterior. 
 
 
 ## Mac OSx
+
+
+
+
 
 # Referências
 
