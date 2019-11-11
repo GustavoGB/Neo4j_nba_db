@@ -21,3 +21,6 @@ u1.relationships.create("likes", b2)
 u2.relationships.create("likes", b1)
 # Bi-directional relationship?
 u1.relationships.create("friends", u2)
+
+#Rodar no browser a query:
+#MATCH (n)-[r]->(m) RETURN n, r, m;
