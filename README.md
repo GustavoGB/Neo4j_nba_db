@@ -68,6 +68,26 @@ OBS: Colocar de preferência em ~\
 
 ## Mac OSx
 
+#### Primeiro Passo:
+
+    -> Instalar Neo4j Community edition
+
+    -> Utilizar a versão Community Server! Não será possível com outra versão. 
+
+    -> Se desejar é possível instalar o neo4j por meio do brew com o comando:
+
+ ```bash
+ $ brew install neo4j
+ ```
+
+ 
+    
+    
+
+OBS: Colocar de preferência em ~\ 
+
+
+
 
 
 
