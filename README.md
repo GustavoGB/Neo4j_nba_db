@@ -21,13 +21,22 @@ Já no Neo4j, o diagrama ficaria mais ou menos da seguinte forma:
 Agora com os grafos , mesmo para um número gigantesco deles o comportamento do banco de dados será mais eficaz do que o banco relacional, pois a velocidade de deslocamento dos grafos é muito maior do que realizar dezenas de joins. 
 Além de simplificar o modelo relacional, o modelo de grafos ainda é considerado ACID que garante a atomicidade, consistência, isolamento, durabilidade, dos dados em condições de transação.  Fazendo com que dados sensíveis sejam passíveis de serem armazenados no Neo4j. 
 
-## Neo4J – Guia de instalação Windows 
+## Neo4J 
+
+    É necessário ter o Java instalado para conseguir rodar o Neo4j. A versão 8.0 já é o suficiente. 
+    Além disso o Neo4j suporta drivers para várias linguaguens, neste exemplo usamos o driver para Python.
+
+    O site para a instalação básica é :
+        https://neo4j.com/download-center/#community
+
+## Guia de instalação Windows 
 
 #### Primeiro Passo:
 
     Instalar Neo4j Community edition
 
     Utilizar a versão Community Server! Não será possível com outra versão.
+
     
 
 OBS: Colocar de preferência em ~\ 
@@ -84,10 +93,36 @@ OBS: Colocar de preferência em ~\
     
     -> Repetir os passos a partir do Windows
 
- 
-    
+
 
 OBS: Colocar de preferência em ~\ 
+
+## Instalação no Linux
+
+### -> Guia instalação neo4j ubuntu:
+
+    Fazer o download do neo4j community edition .tar
+
+
+    Fazer o tar -xvf do arquivo
+
+### Configurar o seu ambiente local
+    Editar o .bashrc:
+    export PATH=$PATH:\ 
+    /home/...../neo4j-community-2.3.0
+
+Agora podemos usar o comando neo4j console e rodar o servidor
+
+## **Caso dê algum erro, verifique:**
+    -> Verifique que as pastas extraidas do arquivo tar estão no local certo: coloque "certificates", "conf", "data", "import", "lib", "logs", "plugins", "run" e "tools" dentro da pasta $NEO4J_HOME/bin.
+
+
+	-> Sua instalação do java como dito inicialmente
+
+## Depois disso seguir os passos do windows.
+
+    
+
 
 
 ## Exemplo com Cypher
