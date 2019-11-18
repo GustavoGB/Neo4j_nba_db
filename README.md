@@ -91,7 +91,15 @@ OBS: Colocar de preferência em ~\
 
  #### Segundo passo:
     
-    -> Repetir os passos a partir do Windows
+    Utilizar o comando no terminal 
+ ```bash
+ $ neo4j start
+ ```
+
+### Caso o neo4j for reconhecido corretamente ele irá abrir um dashboard no localhost: http://localhost:7474/browser/ a partir dai segue o tutorial do Windows com os usuários e senhas.
+### Caso ele não tenha sido reconhecido tente alterar as variáveis de ambiente no .bash_profile 
+
+     
 
 
 
