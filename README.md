@@ -70,7 +70,7 @@ OBS: Colocar de preferência em ~\
 
 ### Quarto passo: 
 
-    -> Testar um script em python usando neo4jbolt na porta 7687 
+    -> Testar um script em python usando o Neo4j Python Driver.
 
     -> Rode o arquivo neo4j_example.py. Lembre-se de alterar a senha que foi criada no passo anterior. 
 
@@ -240,8 +240,12 @@ session.run(insert_query, parameters={"pairs": data})
 
  ```
 
- Como é possivel observar ele constroi as relações de pares e utiliza a aresta como [KNOWS] que seria se uma pessoa conhece a outra ou não. 
- Já a data em si são os pares que ele da merge na querie, e no final roda-se a sessão com os parâmetros específicos.
+ Nesse trecho de código, abstraímos as relações existentes entre as pessoas (que são representadas pelos nós) a partir da lista de 
+ lista chamada de data. Em seguida, utilizamos uma query do cypher com o comando UNWIND e MERGE. O primeiro deles, é responsável por 
+ reorganizar os dados que foram passados pela lista de listas chamada de "data" em rows, que podem ser posteriormente transformadas em um grafo.
+ Em seguida, o comando MERGE é responsável por criar os nós ou relações caso não existam ainda na base de dados de grafos. Como é possível observar,
+ o tipo de relação que estamos criando para cada par da lista "data" é "KNOWS", ou seja, uma pessoa conhece a outra.
+ 
 
 
 ## Conexão para formar a rede
@@ -261,7 +265,7 @@ for record in results:
     print(record["name"])
  ```
 
-Baseado na rede laranja criada, esta querie é responsável por criar a relação amigo de amigo e tem como a referência se um par de pessoas se conhece ou não.
+Esta querie é responsável por retornar com o comando MATCH, que é parecido com um SELECT do SQL, um grafo de quais nós representam pessoas que são amigos do amigo. Ou seja, para cada nó person, existe um nó friend que possui amigos. Nesse sentido, para cada nó person, retornamos os amigos dos seus amigos, mas não simplesmente os seus amigos (espero que não tenha ficado muito confuso).
  
 
 ```python
