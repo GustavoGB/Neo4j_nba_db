@@ -1,4 +1,6 @@
 #pip install neo4jrestclient
+#Retirado do site: https://marcobonzanini.com/2015/04/06/getting-started-with-neo4j-and-python/
+
 from neo4jrestclient.client import GraphDatabase 
 db = GraphDatabase("http://localhost:7474", username="neo4j", password="admin")
  

@@ -1,4 +1,6 @@
-from neo4j.v1 import GraphDatabase, basic_auth
+#pip install neo4j  
+#Exemplo retirado do site: https://neo4j.com/developer/
+from neo4j import GraphDatabase, basic_auth
 
 driver = GraphDatabase.driver("bolt://localhost", auth=basic_auth("neo4j", "admin"))
 session = driver.session()
