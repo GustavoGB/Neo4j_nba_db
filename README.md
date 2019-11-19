@@ -206,7 +206,7 @@ Primeiro vamos ver qual o resultado gerado pelo código e analisar ponto a ponto
 
 ![](Neo4jREST.PNG)
 
-Com a imagem podemos ver que duas redes foram geradas, é possível observar que os nós possuem os nomes das pessoas, as arestas possuem a relação que cada uma delas possui. A rede que está em azul foi formada por outro código que é bem simples e pode ser mostrado posteriormente. 
+Esta imagem mostra os grafos formados pelos dois exemplos. O grafo em laranja corresponde ao que foi formado como resultado do código acima. É possível observar que os nós possuem os nomes das pessoas, as arestas possuem a relação que cada uma delas possui. A rede que está em azul foi formada por outro código que é bem simples e também se encontra nos exemplos. 
 
 ## Conectando com o localhost
 
